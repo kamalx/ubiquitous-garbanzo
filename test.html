@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+  <title>TEST PAGE</title>
+  <link rel="stylesheet" href="./variables.css">
+  <link rel="stylesheet" href="./search.css">
+  <link rel="stylesheet" href="./styles.css">
+  <script src='./domready.js'></script>
+  <script src='./search.js'></script>
+  <script src='./light_dark.js'></script>
+</head>
+
+<body>
+  <nav class="container">
+    <!-- the switch-->
+    <input id="toggle_search_modal" type="checkbox" name="searchmodal_switch" />
+    <label class="search-button" for="toggle_search_modal">
+      <div class="off">
+        <div class="button">
+          <span>/</span> or <span>t</span> to search.
+        </div>
+      </div>
+    </label>
+
+    <!-- the modal-->
+    <div class="search-modal" id="search_modal">
+      <div class="exit-search">
+        <label for="toggle_search_modal" tabindex="2">&times;</label>
+      </div>
+      <div class="search-bar-ui">
+        <input tabindex="1" id="search" type="search" name="q" placeholder="Search for anything on this site" />
+        <small class="hint">To close, press <span class="Key_Legend">ESC</span> or TAB out of search field and press <span class="Key_Legend">.</span></small>
+      </div>
+    </div>
+  </nav>
+  <h1>This is a test for external scripts</h1>
+  <div class="content">
+    <p>This is a simple page to make sure all our external files such as
+      <code>js</code>, and <code>css</code> are loading properly in
+      our browser of choice and any deviation from this behaviour is not
+      our browser's fault.
+    </p>
+    <p>Press <span class="Key_Legend">ALT</span> <span class="Key_Legend">X</span> to toggle light/dark theme.</p>
+  </div>
+</body>
+</html>

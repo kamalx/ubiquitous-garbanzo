@@ -1,0 +1,52 @@
+html { box-sizing: border-box; }
+html * { box-sizing: inherit; }
+h1 {
+  width: 90vw;
+  max-width: 900px;
+  margin: 10vh 0 10vh 1rem;
+  text-align: left;
+  font-size: 4rem;
+  color: var(--body-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+}
+.container, .content {
+  width: 90vw;
+  margin: auto;
+  font-family:'Raleway', sans-serif;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--body-text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  transition: all 200ms ease-out;
+}
+
+.search-modal {
+  width: 96vw;
+}
+
+code {
+  color: var(--generic-link-color);
+}
+
+@media screen and (min-width: 520px) {
+  h1 {
+    width: 70vw;
+    max-width: 900px;
+    margin: 10vh 0 10vh 15vw;
+    text-align: left;
+    font-size: 6rem;
+  }
+
+  .container, .content {
+    width: 70vw;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 1.2rem;
+  }
+}
